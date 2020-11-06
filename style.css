@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+    color: lightsteelblue;
+  
+}
+.border{
+   box-shadow: 2px 2px 20px black;
+    border: black;
+    text-align: center;
+    background-color: #fffbf8;
+    padding-bottom: 3em;
+    padding-top: 2em;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 0.5em;
+}
+.textBox{
+    margin: 3em;
+}
+.button{
+
+}
