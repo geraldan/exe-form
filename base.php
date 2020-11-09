@@ -22,4 +22,6 @@ VALUES
 
 //execution de la requete
 $pdo->exec($sql);
+
+
 ?>
