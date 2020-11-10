@@ -24,10 +24,11 @@ $information = $pdoStat->fetchAll();
     <title>Formulair</title>
 </head>
 <body>
-<form action="modifier.php" method="POST">
+<?php foreach ($information as $contact):?>
+<form action="modifier.php?id=<?= $contact['id'] ?>" method="POST">
     <H1>FORMULAIRE DE CONTACT</H1>
     <div class="border">
-        <?php foreach ($information as $contact):?>
+
 
         <div class="textBox">
             <label>Prénom :</label>
@@ -49,14 +50,12 @@ $information = $pdoStat->fetchAll();
             <label>Ville :</label>
             <input  value="<?= $contact[ 'city'] ?>" type="text" name="city">
         </div>
-                <?php $contact['id'] ?>
         <div class="button">
             <input type="submit">
         </div>
-        <?php endforeach; ?>
-
     </div>
 </form>
+<?php endforeach; ?>
 </body>
 
 

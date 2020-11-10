@@ -23,5 +23,5 @@ VALUES
 //execution de la requete
 $pdo->exec($sql);
 
-
+header ('location: http://localhost/exe-form/affichage_bdd.php');
 ?>

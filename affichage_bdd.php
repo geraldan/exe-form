@@ -20,11 +20,13 @@ $information = $pdoStat->fetchAll();
     <link rel="stylesheet" href="style.css">
     <title>resultat formulaire</title>
 </head>
-<body>
-    <ul class="liste">
+<div class="accueil">
+<a class="button" href="index.php">Accueil</a>
+</div>
+    <div class="flexBox">
+
         <?php foreach ($information as $contact):?>
         <div class="boite">
-            <li>
                 <div class="nom">
                     <p>Nom :
                     <?= $contact[ 'name'] ?> </p>
@@ -49,11 +51,10 @@ $information = $pdoStat->fetchAll();
                     <a href="suprimer.php?numContact=<?= $contact['id'] ?> " style="color: red">Supprimer</a>
                     <a href="form_modif.php?numContact=<?= $contact['id'] ?> "style="color: red">Modifier</a>
                 </div>
-            </li>
 
         </div>
         <?php endforeach; ?>
-    </ul>
+    </div>
 
 </body>
 </html>
