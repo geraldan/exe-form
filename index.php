@@ -32,10 +32,10 @@
             </div>
             <div class="textBox">
                 <label>Ville :</label>
-                <input type="text" name="city" required> *
+                <input type="text" name="city" required class="send"> *
             </div>
 
-                <input type="submit" value="Envoyer le formulaire">
+                <input  type="submit" value="Envoyer le formulaire" class="send">
 
         </div>
 </form>

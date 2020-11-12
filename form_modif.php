@@ -50,9 +50,9 @@ $information = $pdoStat->fetchAll();
             <label>Ville :</label>
             <input  value="<?= $contact[ 'city'] ?>" type="text" name="city">
         </div>
-        <div class="button">
-            <input type="submit">
-        </div>
+
+            <input type="submit" class="send">
+
     </div>
 </form>
 <?php endforeach; ?>
