@@ -77,5 +77,5 @@ div{
     transition: color , background-color 2s;
 }
 a{
-    style
+    text-decoration: none;
 }
